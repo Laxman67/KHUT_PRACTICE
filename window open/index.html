@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<button onclick="openWindow()">Click to Open window</button>
+
+</head>
+<body>
+
+    <script>
+
+document.addEventListener('keypress',function (evt) {
+  if(evt.keyCode===113){
+  openWindow()
+  }
+
+  })
+  function openWindow(){
+    window.open("https://www.google.com/","MsgWindow","width=400,height=300").write("<p>This is 'myWindow'</p>")
+  
+}
+
+    </script>
+    
+</body>
+</html>
